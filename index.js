@@ -193,6 +193,11 @@ io.on("connection", socket => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Tambola Server is running 🚀");
+});
+
+
 server.listen(4000, () =>
   console.log()
   // console.log("🚀 Server running on http://localhost:4000")
